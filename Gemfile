@@ -56,3 +56,16 @@ group :test do
   gem "launchy"
   gem "database_cleaner"
 end
+
+
+
+gem 'devise'
+# gem 'sprockets-rails', :require => 'sprockets/railtie'
+gem 'bootstrap'
+# source 'https://rails-assets.org' do
+#   gem 'rails-assets-tether', '>= 1.1.0'
+# end
+gem 'bootstrap-generators', '~> 3.3.4'
+# gem 'cancancan', '~> 1.13', '>= 1.13.1'
+# gem 'simple_form'
+# gem 'public_activity', '~> 1.4'
