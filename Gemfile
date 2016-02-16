@@ -66,6 +66,6 @@ gem 'bootstrap'
 #   gem 'rails-assets-tether', '>= 1.1.0'
 # end
 gem 'bootstrap-generators', '~> 3.3.4'
-# gem 'cancancan', '~> 1.13', '>= 1.13.1'
+gem 'cancancan', '~> 1.13', '>= 1.13.1'
 # gem 'simple_form'
 # gem 'public_activity', '~> 1.4'
