@@ -8,6 +8,38 @@
     <%= f.input :image %>
     <%#= f.association :user, default: @current_user %>
     
+    <div id = 'ingredients'>
+    <%= f.simple_fields_for :ingredients do |ingredient| %>
+    <%= render 'ingredient_fields', f: ingredient %>
+    <% end %>
+    <div class="links">
+          
+
+      <%= link_to_add_association f, :ingredients, class: 'btn btn-default add-button'  do %>
+      
+      
+      <p><span class="glyphicon glyphicon-plus"></span> Add Ingredient</p>
+      <% end %>
+    </div>
+
+<div id = 'directions'>
+    <%= f.simple_fields_for :directions do |direction| %>
+    <%= render 'direction_fields', f: direction %>
+    <% end %>
+    <div class="links">
+          
+
+      <%= link_to_add_association f, :directions, class: 'btn btn-default add-button'  do %>
+      
+      
+      <p><span class="glyphicon glyphicon-plus"></span> Add Direction</p>
+      <% end %>
+    </div>
+
+
+    
+    </div>
+
   </div>
 
   <div class="form-actions">
