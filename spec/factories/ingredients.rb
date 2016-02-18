@@ -1,7 +1,9 @@
+require 'faker'
+
 FactoryGirl.define do
   factory :ingredient do
-    name "MyString"
-    quantity "9.99"
-    recipe nil
+    name {Faker::Lorem.word}
+    quantity {Faker::Number.between(1, 10)}
+    association :recipe
   end
 end
