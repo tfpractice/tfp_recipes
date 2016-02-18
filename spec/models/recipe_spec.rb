@@ -11,7 +11,7 @@ describe 'attributes' do
   it 'has a description' do
   	expect(recipe.description).to be_a_kind_of(String)
   end
-  it 'has a user' do
+  it 'belongs to a user' do
   	expect(recipe.user).to be_a_kind_of(User)
   end
 end
