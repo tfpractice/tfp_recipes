@@ -1,7 +1,7 @@
 FactoryGirl.define do
   factory :direction do
-    step "MyText"
+    step {Faker::Lorem.words(15)}
     position 1
-    recipe nil
+    association :recipe 
   end
 end
