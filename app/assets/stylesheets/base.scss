@@ -1,0 +1,11 @@
+
+.vertical-align{
+	display: flex;
+	align-items: center;
+}
+.recipeBox{
+	margin: auto;
+	.image-wrapper{
+		max-width: 100%;
+	}
+}

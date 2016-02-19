@@ -74,4 +74,6 @@ gem 'cocoon'
 gem 'carrierwave'
 gem 'acts_as_list'
 gem 'unitwise'
+gem 'rmagick'
+gem "mini_magick"
 # gem 'public_activity', '~> 1.4'

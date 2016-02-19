@@ -8,7 +8,7 @@ class RecipesController < ApplicationController
   # GET /recipes
   # GET /recipes.json
   def index
-    @recipes = recipes.all
+    @recipes = Recipe.all
   end
 
   # GET /recipes/1
