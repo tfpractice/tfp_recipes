@@ -1,26 +1,39 @@
 <div class="page-header">
   <%= link_to recipes_path, class: 'btn btn-default' do %>
-    <span class="glyphicon glyphicon-list-alt"></span>
-    Back
+  <span class="glyphicon glyphicon-list-alt"></span>
+  Back
   <% end %>
   <%= link_to edit_recipe_path(@recipe), class: 'btn btn-primary' do %>
-    <span class="glyphicon glyphicon-pencil"></span>
-    Edit
+  <span class="glyphicon glyphicon-pencil"></span>
+  Edit
   <% end %>
   <h1>Show recipe</h1>
-  <%= image_tag(@recipe.image.url) %>
+  <%# image_tag(@recipe.image.url) %>
 </div>
-<div class="col-6">
+<div class="jumbotron" style="background: url(<%= @recipe.image.url %>); background-size: cover;background-position: center;  background-repeat: no-repeat; ">
+  <div class="container">
+    <%= @recipe.title  %>
+    <%= @recipe.description  %>
+  </div>
+  
+  
+</div>
+<div class="container">
+  <div class="ingredients col-md-6">
+    <h2>Listing Ingredients</h2>
+  </div>
+  <div class="directions col-md-6">
+    <h2>Directions</h2>
+    
+  </div>
+</div>
+<div class="container">
   <dl class="dl-horizontal">
-  <dt>Title:</dt>
-  <dd><%= @recipe.title %></dd>
-
-  <dt>Description:</dt>
-  <dd><%= @recipe.description %></dd>
-
-  <dt>User:</dt>
-  <dd><%= @recipe.user %></dd>
-
-</dl>
-
+    <dt>Title:</dt>
+    <dd><%= @recipe.title %></dd>
+    <dt>Description:</dt>
+    <dd><%= @recipe.description %></dd>
+    <dt>User:</dt>
+    <dd><%= @recipe.user %></dd>
+  </dl>
 </div>
