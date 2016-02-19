@@ -1,6 +1,8 @@
 class RecipesController < ApplicationController
   before_action :set_recipe, only: [:show, :edit, :update, :destroy]
-  load_and_authorize_resource :through => :current_user, except: [:index]
+  # load_and_authorize_resource :through => :current_user, except: [:index]
+  load_and_authorize_resource :through => :current_or_guest_user, except: [:index]
+
 
 
   # GET /recipes
